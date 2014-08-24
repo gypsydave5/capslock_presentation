@@ -1,0 +1,57 @@
+/**
+ * A simple theme for reveal.js presentations, similar
+ * to the default theme. The accent color is darkblue.
+ *
+ * This theme is Copyright (C) 2012 Owen Versteeg, https://github.com/StereotypicalApps. It is MIT licensed.
+ * reveal.js is Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+
+
+// Include theme-specific fonts
+@import url(https://fonts.googleapis.com/css?family=News+Cycle:400,700);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
+@import url(http://fonts.googleapis.com/css?family=Special+Elite);
+
+// Override theme settings (see ../template/settings.scss)
+$mainFont: 'Lato', sans-serif;
+$mainFontSize: 52px;
+$mainColor: #FFF;
+$headingFont: 'Special Elite',Impact, sans-serif;
+$headingColor: #FFF;
+$headingTextShadow: none;
+$headingTextTransform: none;
+$backgroundColor: #BB2EFF;
+$linkColor: #89B200;
+$linkColorHover: lighten( $linkColor, 20% );
+$selectionBackgroundColor: rgba(0, 0, 0, 0.99);
+
+h1.title {
+  font-size: 18em
+}
+
+#shouty {
+  /*color: #CEFF2E;*/
+  /*text-shadow: 0 0 0.5em #7E10B2;*/
+  text-shadow: 0 0 0.5em #CEFF2E, 0 0 0.5em #CEFF2E;
+  text-align: right;
+  text-align: top;
+}
+
+p#shouty {
+  font-size: 1em;
+}
+
+h1#shouty {
+  font-size: 4em;
+}
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
